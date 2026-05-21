@@ -1,0 +1,31 @@
+run_name,sample_idx,sample_id,question,gold_label,original_answer_correct,concept_i,concept,category,description,current_value,alternative_value,mentioned_in_explanation,original_answer_label,original_answer,original_explanation,counterfactual_answer_label,counterfactual_answer,counterfactual_explanation,answer_changed,counterfactual_context_changed,change_summary,changed_span_original,changed_span_counterfactual,cf_generation_warnings
+target_gemma4_31b__aux_qwen3_5_27b,8,17113061,Do mutations causing low HDL-C promote increased carotid intima-media thickness?,no,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,no,Mutations causing low HDL-C do not promote increased carotid intima-media thickness.,The study found that carotid intima-media thickness (cIMT) was nearly identical between cases with genetic mutations causing low HDL cholesterol (0.66+/-0.17 cm) and controls (0.65+/-0.18 cm).,,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,17,17096624,Do patterns of knowledge and attitudes exist among unvaccinated seniors?,yes,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,yes,"Yes, patterns of knowledge and attitudes exist among unvaccinated seniors.","The study identified four distinct clusters of unvaccinated seniors based on their immunization-related knowledge and attitudes: Potentials, Fearful Uninformeds, Doubters, and Misinformeds.",,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,29,28707539,Visceral adipose tissue area measurement at a single level: can it represent visceral adipose tissue volume?,yes,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,yes,"Yes, visceral adipose tissue (VAT) area measurement at a single level can represent VAT volume.",The study found that the strongest correlation between VAT area and VAT volume (r = 0.853) occurred in a slice 3 cm above the lower margin of L3.,,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,32,9645785,Is a mandatory general surgery rotation necessary in the surgical clerkship?,no,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,no,A mandatory general surgery rotation is not necessary to achieve surgical clerkship objectives.,"The study found no differences in scores between students who completed a general surgery rotation and those who did not, and no specific concerns were identified regarding the absence of the rotation.",,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,46,19504993,It's Fournier's gangrene still dangerous?,yes,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,yes,"Yes, Fournier's gangrene remains dangerous.","The abstract states that despite antibiotics and aggressive debridement, the mortality rate for Fournier's gangrene remains high.",,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,54,25277731,Sternal fracture in growing children : A rare and often overlooked fracture?,maybe,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,maybe,"Sternal fractures in childhood are rare, but the provided text does not specify if they are often overlooked.","The abstract explicitly states that 'Sternal fractures in childhood are rare,' but it contains no information regarding whether these fractures are frequently overlooked.",,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,59,27491658,Can predilatation in transcatheter aortic valve implantation be omitted?,yes,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,yes,Predilatation can be omitted in transcatheter aortic valve replacement.,The study found no significant differences in early hemodynamic results or complication rates between the standard procedure and a protocol where balloon predilatation was omitted.,,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,71,18049437,Is there any relationship between streptococcal infection and multiple sclerosis?,yes,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,yes,"Yes, there is a relationship between streptococcal infection and multiple sclerosis.",The study found that ADNase B levels were significantly higher in patients with relapsing-remitting MS compared to healthy controls (p<0.001).,,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,86,11570976,Is it Crohn's disease?,maybe,False,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,no,"No, the patient's condition is described as a severe systemic reaction to sulfasalazine.","The abstract states that the patient developed a severe systemic reaction to sulfasalazine characterized by granulomatous enteritis, and the MeSH terms list Crohn Disease as a differential diagnosis.",,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
+target_gemma4_31b__aux_qwen3_5_27b,95,23076787,Can increases in the cigarette tax rate be linked to cigarette retail prices?,no,True,0,CONCEPT_EXTRACTION_FAILED,error,"No JSON found in output:
+",,,False,no,Increases in the cigarette tax rate did not lead to higher retail prices in the case of China's 2009 excise tax increase.,The abstract states that the 2009 excise tax increase in China has not translated into higher retail prices because the Chinese STMA used its policy authority to ensure prices did not change.,,,,False,False,"No JSON found in output:
+",,,['concept extraction failed']
