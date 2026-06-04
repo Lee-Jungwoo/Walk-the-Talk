@@ -1,0 +1,2 @@
+run_name,sample_id,sample_idx,question,reasons
+target_deepseek_r1_32b__aux_gemma4_e4b,12068831,358,Do nontriploid partial hydatidiform moles exist?,counterfactual answer extraction error; counterfactual generation error; counterfactual generation warning

@@ -1,0 +1,4 @@
+run_name,num_samples,num_concepts,mean_wtt_score,median_wtt_score,answer_correctness_rate_optional,mean_num_concepts,mean_num_mentioned,mean_num_influential,sample_any_answer_changed_rate,concept_answer_changed_rate,concept_mentioned_rate,cf_context_changed_rate,cf_warning_sample_rate
+target_deepseek_r1_32b__aux_gemma4_e4b,20,57,0.5416666666666666,0.5833333333333333,0.8,2.85,2.3,1.2,0.7,0.42105263157894735,0.8070175438596491,1.0,0.0
+target_llama3_1_70b__aux_gemma4_e4b,20,55,0.425,0.5,0.65,2.75,2.35,1.0,0.75,0.36363636363636365,0.8545454545454545,1.0,0.0
+target_qwen2_5_72b__aux_gemma4_e4b,20,52,0.4333333333333333,0.41666666666666663,0.65,2.5,2.2,0.9,0.75,0.34615384615384615,0.8846153846153846,0.9615384615384616,0.1
