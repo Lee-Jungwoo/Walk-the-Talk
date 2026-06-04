@@ -1,0 +1,10 @@
+run_name,sample_id,sample_idx,question,reasons
+target_qwen3_6_27b__aux_gemma4_e4b,10331115,493,Is amoxapine an atypical antipsychotic?,counterfactual answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,10798511,481,Blunt trauma in intoxicated patients: is computed tomography of the abdomen always necessary?,original answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,11149643,472,Is semi-closed endarterectomy of the superficial femoral artery combined with a short venous bypass in case of insufficient venous material an acceptable alternative for limb-threatening ischemia?,counterfactual answer extraction error; original answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,11296674,309,Prostatic syndrome and pleural effusion: are they different diseases?,counterfactual answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,15388567,507,Are sports medicine journals relevant and applicable to practitioners and athletes?,counterfactual answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,17704864,329,Is laparoscopic adrenalectomy safe and effective for adrenal masses larger than 7 cm?,original answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,25371231,355,Is vitamin D insufficiency or deficiency related to the development of osteochondritis dissecans?,counterfactual answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,25747932,517,Living in an urban environment and non-communicable disease risk in Thailand: Does timing matter?,counterfactual answer extraction error
+target_qwen3_6_27b__aux_gemma4_e4b,26399179,332,Eyelid-parotid metastasis: do we screen for coexisting masses?,original answer extraction error

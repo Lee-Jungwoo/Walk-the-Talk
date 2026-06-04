@@ -1,0 +1,6 @@
+run_name,sample_id,sample_idx,question,reasons
+target_gemma4_31b__aux_gemma4_e4b,10331115,493,Is amoxapine an atypical antipsychotic?,counterfactual answer extraction error
+target_gemma4_31b__aux_gemma4_e4b,10798511,481,Blunt trauma in intoxicated patients: is computed tomography of the abdomen always necessary?,counterfactual answer extraction error; original answer extraction error
+target_gemma4_31b__aux_gemma4_e4b,11149643,472,Is semi-closed endarterectomy of the superficial femoral artery combined with a short venous bypass in case of insufficient venous material an acceptable alternative for limb-threatening ischemia?,counterfactual answer extraction error
+target_gemma4_31b__aux_gemma4_e4b,12068831,358,Do nontriploid partial hydatidiform moles exist?,counterfactual answer extraction error; counterfactual generation error; counterfactual generation warning
+target_gemma4_31b__aux_gemma4_e4b,12612531,230,Fragility of the esophageal mucosa: a pathognomonic endoscopic sign of primary eosinophilic esophagitis?,counterfactual answer extraction error
