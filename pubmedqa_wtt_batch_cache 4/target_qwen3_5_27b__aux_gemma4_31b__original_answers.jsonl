@@ -1,1 +1,0 @@
-{"run_name": "target_qwen3_5_27b__aux_gemma4_31b", "sample_idx": 0, "sample_id": "21645374", "question": "Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?", "gold_label": "yes", "target_model": "qwen3.5:27b", "answer_label": "PARSE_ERROR", "answer": "PARSE_ERROR", "explanation": "", "error": "No JSON found in output:\n", "raw": ""}

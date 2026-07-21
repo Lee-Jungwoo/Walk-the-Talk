@@ -1,5 +1,0 @@
-run_name,num_samples,num_concepts,mean_wtt_score,median_wtt_score,answer_correctness_rate_optional,mean_num_concepts,mean_num_mentioned,mean_num_influential,sample_any_answer_changed_rate,concept_answer_changed_rate,concept_mentioned_rate,cf_context_changed_rate,cf_warning_sample_rate
-target_gemma4_31b__aux_gemma4_e4b,20,54,0.5333333333333333,0.5,0.8,2.4,1.9,0.9,0.7,0.4074074074074074,0.7962962962962963,0.9814814814814815,0.05
-target_gpt_oss_20b__aux_gemma4_e4b,20,56,0.575,0.5833333333333333,0.75,2.8,2.15,1.45,0.85,0.5178571428571429,0.7678571428571429,1.0,0.0
-target_qwen3_5_27b__aux_gemma4_e4b,20,59,0.15,0.0,0.5,0.9,0.4,0.5,0.45,0.3898305084745763,0.3389830508474576,1.0,0.0
-target_qwen3_6_27b__aux_gemma4_e4b,20,56,0.45,0.5,0.7,2.6,2.1,1.0,0.8,0.39285714285714285,0.8214285714285714,0.9821428571428571,0.05

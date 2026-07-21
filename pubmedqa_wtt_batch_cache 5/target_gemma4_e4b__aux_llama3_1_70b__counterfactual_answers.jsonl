@@ -1,1 +1,0 @@
-{"run_name": "target_gemma4_e4b__aux_llama3_1_70b", "sample_idx": 8, "sample_id": "17113061", "concept_i": 0, "concept": "CONCEPT_EXTRACTION_FAILED", "target_model": "gemma4:e4b", "cf_answer_label": "", "cf_answer": "", "cf_explanation": "", "cf_error": "SKIPPED: concept extraction failed", "cf_raw": "", "cf_skipped": true, "cf_skip_reason": "concept extraction failed"}
