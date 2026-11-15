@@ -26,7 +26,7 @@ wtt_lite_score = |mentioned ∩ influential| / |mentioned ∪ influential|
 
 ## 결과
 
-`pubmedqa_wtt_batch_cache 9/`의 `ALL__run_summary.csv`와 `ALL__sample_summary.csv`를 기준으로 집계했습니다. 표의 n은 채점된 샘플 수이며, 표준편차는 샘플별 `walk_the_talk_lite_score`의 표본 표준편차(ddof=1)입니다.
+`results/batch_09/`의 `ALL__run_summary.csv`와 `ALL__sample_summary.csv`를 기준으로 집계했습니다. 표의 n은 채점된 샘플 수이며, 표준편차는 샘플별 `walk_the_talk_lite_score`의 표본 표준편차(ddof=1)입니다.
 
 | Target 모델 | Aux 모델 | n | 평균 walk_the_talk_lite_score | 표준편차 |
 |---|---|---:|---:|---:|
@@ -39,13 +39,25 @@ wtt_lite_score = |mentioned ∩ influential| / |mentioned ∪ influential|
 
 이 점수는 설명에서 언급한 개념과 반사실 개입 시 실제로 답변을 바꾸는 개념 간의 겹침을 샘플별 Jaccard 유사도로 측정한 뒤 평균한 값입니다. 각 run의 채점 샘플은 11~20개로 적으며, 점수는 aux 모델의 개념 추출과 반사실 생성에 의존하므로 일반적인 모델 우열로 해석하기 어렵습니다. `ALL__excluded_samples.csv`에는 답변 추출 오류나 반사실 생성 오류·경고 등의 사유로 제외된 샘플이 기록되어 있으며, 이들은 표의 n과 평균에 포함되지 않습니다.
 
-![Cache 9 run별 요약 그래프](pubmedqa_wtt_batch_cache%209/ALL__run_summary_plot.png)
+![Cache 9 run별 요약 그래프](results/batch_09/ALL__run_summary_plot.png)
 
-`pubmedqa_wtt_batch_cache 9/`의 `ALL__run_summary_plot.png`에서 가져온 요약 그래프입니다.
+`results/batch_09/`의 `ALL__run_summary_plot.png`에서 가져온 요약 그래프입니다.
+
+## 저장소 구조
+
+```text
+README.md                     # 실험 개요와 결과를 설명합니다.
+.gitignore                    # 로컬 생성 파일을 제외합니다.
+wtt_lite_pubmedqa.ipynb        # 실험을 실행하는 노트북입니다.
+results/
+  batch_09/                   # 최신 실행 결과를 보관합니다.
+  batch_08/                   # 이전 실행 결과를 보관합니다.
+  legacy/                     # 과거 분석 산출물을 참고용으로 보관합니다.
+```
 
 ## 실행
 
-`0521_intro2genai_demo_batched.ipynb`로 실행합니다.
+`wtt_lite_pubmedqa.ipynb`로 실행합니다.
 - 로컬 모델은 Ollama로, `google/...`·`gemini...` 모델은 `google.colab.ai`로 자동 라우팅(`llm_generate`가 모델 이름 보고 분기).
 - setup(패키지 + Ollama 설치) → 파이프라인 정의(pydantic 스키마 + 본체) → `run_colab_experiment(...)` 실행 → 결과 CSV 확인
 
@@ -75,8 +87,8 @@ Colab 디스크가 빠듯해서, 파이프라인을 4단계(original → concept
 | `*__excluded_samples.csv` | 채점 제외된 샘플과 사유 (cache 9부터) |
 | `ALL__*` | 폴더 내 전체 run 합친 집계 + 요약 그래프 |
 
-최신 결과는 `pubmedqa_wtt_batch_cache 9/`. cache 8보다 target 조합이 많고 `excluded_samples`가 추가되어 있습니다.
+최신 결과는 `results/batch_09/`. cache 8보다 target 조합이 많고 `excluded_samples`가 추가되어 있습니다.
 
 ## 레거시
 
-루트의 `combined_cache_7_8_9__*.csv`, `LLM_Faithfulness_Comparison*.png`, 낱개로 남은 `target_*__aux_*__*.jsonl`은 예전 분석 패스 산출물이고, 만들었던 노트북들은 정리하면서 지웠으며 결과만 참고용으로 남겨두었습니다. 재현하려면 메인 노트북을 다시 돌려 새 캐시를 만들면 됩니다.
+`results/legacy/`에 보관한 `combined_cache_7_8_9__*.csv`, `LLM_Faithfulness_Comparison*.png`, 낱개로 남은 `target_*__aux_*__*.jsonl`은 예전 분석 패스 산출물이고, 만들었던 노트북들은 정리하면서 지웠으며 결과만 참고용으로 남겨두었습니다. 재현하려면 메인 노트북을 다시 돌려 새 캐시를 만들면 됩니다.
