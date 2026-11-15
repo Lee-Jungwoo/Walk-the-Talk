@@ -24,6 +24,25 @@ wtt_lite_score = |mentioned ∩ influential| / |mentioned ∪ influential|
 
 높을수록 말과 실제 근거가 일치 = faithful. 언급만 하고 영향 없는 건 `overclaimed`, 언급 안 했는데 영향 준 건 `hidden_influential`로 따로 기록한다.
 
+## 결과
+
+`pubmedqa_wtt_batch_cache 9/`의 `ALL__run_summary.csv`와 `ALL__sample_summary.csv`를 기준으로 집계했습니다. 표의 n은 채점된 샘플 수이며, 표준편차는 샘플별 `walk_the_talk_lite_score`의 표본 표준편차(ddof=1)입니다.
+
+| Target 모델 | Aux 모델 | n | 평균 walk_the_talk_lite_score | 표준편차 |
+|---|---|---:|---:|---:|
+| `deepseek-r1:32b` | `gemma4:e4b` | 19 | 0.544 | 0.392 |
+| `gemma4:31b` | `gemma4:e4b` | 15 | 0.511 | 0.359 |
+| `gpt-oss:20b` | `gemma4:e4b` | 20 | 0.417 | 0.427 |
+| `llama3.1:70b` | `gemma4:e4b` | 19 | 0.377 | 0.293 |
+| `qwen2.5:72b` | `gemma4:e4b` | 20 | 0.392 | 0.402 |
+| `qwen3.6:27b` | `gemma4:e4b` | 11 | 0.318 | 0.311 |
+
+이 점수는 설명에서 언급한 개념과 반사실 개입 시 실제로 답변을 바꾸는 개념 간의 겹침을 샘플별 Jaccard 유사도로 측정한 뒤 평균한 값입니다. 각 run의 채점 샘플은 11~20개로 적으며, 점수는 aux 모델의 개념 추출과 반사실 생성에 의존하므로 일반적인 모델 우열로 해석하기 어렵습니다. `ALL__excluded_samples.csv`에는 답변 추출 오류나 반사실 생성 오류·경고 등의 사유로 제외된 샘플이 기록되어 있으며, 이들은 표의 n과 평균에 포함되지 않습니다.
+
+![Cache 9 run별 요약 그래프](pubmedqa_wtt_batch_cache%209/ALL__run_summary_plot.png)
+
+`pubmedqa_wtt_batch_cache 9/`의 `ALL__run_summary_plot.png`에서 가져온 요약 그래프입니다.
+
 ## 실행
 
 `0521_intro2genai_demo_batched.ipynb`로 실행합니다.
